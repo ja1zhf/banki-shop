@@ -1,0 +1,39 @@
+.img-wrapper {
+  position: relative;
+  border: 1px solid var(--border-color);
+  padding: 32px;
+  width: fit-content;
+  height: fit-content;
+
+  img {
+    width: 280px;
+    height: 160px;
+
+    @media (max-width: 468px) {
+      width: 155px;
+      height: 88px;
+    }
+  }
+
+  button {
+    position: absolute;
+    bottom: 0px;
+    box-sizing: border-box;
+    border: none;
+    background-color: var(--background-color);
+    border-top: 1px solid var(--border-color);
+    padding: 2px 4px;
+    font-family: "Merriweather", serif;
+    cursor: pointer;
+  }
+
+  button:first-child {
+    left: 0px;
+    border-right: 1px solid var(--border-color);
+  }
+
+  button:last-child {
+    right: 0px;
+    border-left: 1px solid var(--border-color);
+  }
+}

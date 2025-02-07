@@ -1,0 +1,111 @@
+@import "./base.css";
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0px;
+  font-family: "Merriweather", serif;
+  background-color: var(--background-color);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 45px 0px;
+  min-height: calc(100vh - 97px);
+}
+
+.container {
+  width: 1220px;
+  margin: 0px 32px;
+}
+
+.list {
+  display: flex;
+  gap: 32px;
+  margin-top: 39px;
+
+  @media (max-width: 1284px) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 974px) {
+    justify-content: center;
+  }
+}
+
+.h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+.h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+.h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+.h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+.h5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+.h6 {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+.regular-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 118px;
+  height: 48px;
+  border: none;
+  font-family: "Merriweather", serif;
+  color: var(--white-color);
+  background-color: var(--regular-button-color);
+  cursor: pointer;
+}
+
+.regular-button:hover {
+  background-color: var(--hover-button-color);
+}
+
+.selected-button {
+  background-color: var(--active-button-color);
+}
+
+.animated {
+  animation: spin 2s linear infinite;
+}

@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+:root {
+  --text-color: #343030;
+  --white-color: #f4f6f9;
+  --background-color: #f6f3f3;
+  --footer-background-color: #eceaea;
+  --placeholder-color: #9f9f9f;
+  --regular-button-color: #403432;
+  --hover-button-color: #776763;
+  --active-button-color: #5b3a32;
+  --border-color: #e1e1e1;
+}

@@ -1,0 +1,46 @@
+.card {
+  border: 1px solid var(--border-color);
+
+  .card-img {
+    width: 280px;
+    height: 160px;
+    cursor: pointer;
+  }
+
+  .info {
+    width: 280px;
+    box-sizing: border-box;
+    padding: 20px 24px;
+
+    h2:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .buy {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 22px;
+    }
+  }
+
+  button p {
+    color: var(--white-color);
+  }
+}
+
+.stroked {
+  color: #a0a0a0;
+  text-decoration: line-through;
+}
+
+.selled {
+  display: flex;
+  height: 48px;
+  align-items: center;
+}
+
+.inactive {
+  opacity: 0.5;
+}
