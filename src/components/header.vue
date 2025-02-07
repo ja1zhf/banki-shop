@@ -1,9 +1,9 @@
 <script lang="ts">
+import { defineComponent } from "vue";
 import BurgerIcon from "@/assets/icons/burger.svg";
 import "../assets/header.css";
 
-export default {
-  name: "HeaderComponent",
+export default defineComponent({
   components: {
     BurgerIcon,
   },
@@ -44,7 +44,7 @@ export default {
   beforeUnmount() {
     window.removeEventListener("resize", this.checkScreenSize);
   },
-};
+});
 </script>
 
 <template>

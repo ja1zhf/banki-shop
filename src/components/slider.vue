@@ -1,8 +1,8 @@
 <script lang="ts">
+import { defineComponent } from "vue";
 import "../assets/slider.css";
 
-export default {
-  name: "SliderComponent",
+export default defineComponent({
   props: {
     imgs: {
       type: Array as () => string[],
@@ -29,7 +29,7 @@ export default {
   mounted() {
     this.startSlider();
   },
-};
+});
 </script>
 
 <template>

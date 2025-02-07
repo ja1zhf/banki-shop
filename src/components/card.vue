@@ -6,7 +6,6 @@ import "../assets/card.css";
 import Painting from "@/type.ts";
 
 export default defineComponent({
-  name: "CardComponent",
   components: {
     WindowComponent,
     ButtonComponent,

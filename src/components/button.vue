@@ -1,10 +1,10 @@
 <script lang="ts">
+import { defineComponent } from "vue";
 import CartIcon from "@/assets/icons/cart.svg";
 import LoadingIcon from "@/assets/icons/loading.svg";
 import DoneIcon from "@/assets/icons/done.svg";
 
-export default {
-  name: "ButtonComponent",
+export default defineComponent({
   components: {
     CartIcon,
     LoadingIcon,
@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      buttonState: "Купить",
+      buttonState: "Купить" as string,
     };
   },
   created() {
@@ -46,7 +46,7 @@ export default {
       }
     },
   },
-};
+});
 </script>
 
 <template>

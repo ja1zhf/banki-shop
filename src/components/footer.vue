@@ -1,10 +1,10 @@
 <script lang="ts">
+import { defineComponent } from "vue";
 import PhoneIcon from "@/assets/icons/phone.svg";
 import AddressIcon from "@/assets/icons/address.svg";
 import "../assets/footer.css";
 
-export default {
-  name: "FooterComponent",
+export default defineComponent({
   components: {
     PhoneIcon,
     AddressIcon,
@@ -22,7 +22,7 @@ export default {
       address: "г. Санкт-Петербург, ул. Ефимова, 3",
     };
   },
-};
+});
 </script>
 
 <template>

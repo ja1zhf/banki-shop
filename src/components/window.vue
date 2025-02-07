@@ -1,11 +1,11 @@
 <script lang="ts">
+import { defineComponent } from "vue";
 import Painting from "@/type.ts";
 import SliderComponent from "./slider.vue";
 import ButtonComponent from "../components/button.vue";
 import "../assets/window.css";
 
-export default {
-  name: "WindowComponent",
+export default defineComponent({
   components: {
     SliderComponent,
     ButtonComponent,
@@ -25,7 +25,7 @@ export default {
       }
     },
   },
-};
+});
 </script>
 
 <template>
