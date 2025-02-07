@@ -1,34 +1,51 @@
-# banki-shop
+# How to run
 
-This template should help get you started developing with Vue 3 in Vite.
+Клонируйте репозиторий
 
-## Recommended IDE Setup
+```bash
+git clone https://github.com/ja1zhf/banki-shop.git
+```
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Скачайте не достающие пакеты:
 
-## Type Support for `.vue` Imports in TS
+- npm:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+```bash
+npm install
+```
 
-## Customize configuration
+- yarn:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
 yarn
 ```
 
-### Compile and Hot-Reload for Development
+Сгенерируйте билд с помощью команды
 
-```sh
-yarn dev
+- npm:
+
+```bash
+npm run build-only
 ```
 
-### Type-Check, Compile and Minify for Production
+- yarn:
 
-```sh
-yarn build
+```bash
+yarn build-only
 ```
-# banki-shop
+
+Запустите билд с помощью команды
+
+- npm:
+
+```bash
+npm run preview
+```
+
+- yarn:
+
+```bash
+yarn preview
+```
+
+Готово!
